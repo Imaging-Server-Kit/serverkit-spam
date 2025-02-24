@@ -3,8 +3,6 @@
 
 Implementation of a web server for [Spam](https://www.spam-project.dev/).
 
-Author: EPFL Center for Imaging
-
 ## Installing the algorithm server with `pip`
 
 Install dependencies:
