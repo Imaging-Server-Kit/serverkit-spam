@@ -50,7 +50,7 @@ def run_algorithm_server_side():
             assert isinstance(
                 data, np.ndarray
             ), "Algorithm did not output a Numpy array."
-        elif data_type == "labels":
+        elif data_type == "mask":
             assert isinstance(
                 data, np.ndarray
             ), "Algorithm did not output a Numpy array."
