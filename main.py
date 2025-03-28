@@ -2,6 +2,7 @@
 Algorithm server definition.
 Documentation: https://github.com/Imaging-Server-Kit/cookiecutter-serverkit
 """
+
 from typing import List, Type
 from pathlib import Path
 import numpy as np
@@ -45,7 +46,7 @@ class Parameters(BaseModel):
         return image_array
 
 
-class Server(serverkit.Server):
+class SpamRegisterServer(serverkit.AlgorithmServer):
     def __init__(
         self,
         algorithm_name: str = "spam",
@@ -72,7 +73,7 @@ class Server(serverkit.Server):
         return images
 
 
-server = Server()
+server = SpamRegisterServer()
 app = server.app
 
 if __name__ == "__main__":
